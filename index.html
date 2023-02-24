@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="portfolio.css">
+        <link rel="stylesheet" href="animacoes.css">
+        <link rel="stylesheet" href="responsivo.css">
+        <script defer src="portfolio.js"></script>
+        <script defer src="scrollReveal.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <title>Jefferson Santos</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo-texto">
+                <h1>Jefferson</h1>
+            </div><!--logo-texto-->
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#conhecimentos">Conhecimentos</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                    </ul>
+                </div><!--menu-->
+            </nav>
+            <nav>
+                <div class="menuMobile">
+                    <button class="menu-btn" onclick="menuShow()">
+                        <img src="icons/bars.svg" width="50" id="imgMenu">
+                      </button>
+                    <ul>
+                        <li><a href="#home" onclick="menuClose()">Home</a></li>
+                        <li><a href="#sobre" onclick="menuClose()">Sobre</a></li>
+                        <li><a href="#conhecimentos" onclick="menuClose()">Conhecimentos</a></li>
+                        <li><a href="#projetos" onclick="menuClose()">Projetos</a></li>
+                    </ul>
+                </div><!--menu-->
+            </nav>
+        </header>
+        <main class="main">
+            <section class="container-home" id="home" onmouseover="esconderSeta()" onmouseout="mostrarSeta()">
+                <div class="textos">
+                    <div class="texto-home">
+                        <h2>Olá, eu sou o</h2>
+                        <h2>Jefferson.</h2>
+                    </div><!--texto-home-->
+                    <div class="subtexto-home">
+                        <h3>Desenvolvedor Front-End .</h3>
+                    </div><!--subtexto-home-->
+                </div>
+                <div class="container-img-home">
+                    <div class="imagens">
+                        <img src="img/inicio/home-img.png" alt="computador" width="400">
+                        </img>
+                        <img src="img/inicio/home_css.png" class="icon-one" alt="css" width="90">
+                        </img>
+                        <img src="/img/inicio/home_html.png" class="icon-two" alt="html" width="90">
+                        </img>
+                        <img src="/img/inicio/home_js.png" class="icon-tree" alt="html" width="90">
+                        </img>
+                    </div>
+                </div><!--img-home-->
+                <button>
+                    <a href="https://www.linkedin.com/in/jefferson-apolinario/" target="blank">Veja
+                        meu linkedin</a>
+                </button>
+            </section><!--section-home-->
+            <section class="section-about" id="sobre">
+                <div class="titulo-about">
+                    <h2>Sobre.</h2>
+                </div><!--titulo-about-->
+                <div class="container-about">
+                    <div class="perfil">
+                        <img src="img/sobre/img-perfil.jpeg" alt="foto de perfil" width="250" height="370">
+                        <div class="midia-btn">
+                            <a href="https://github.com/ojef1" target="blank">
+                                <img src="/icons/github.svg" alt="github" width="50">
+                            </a>
+                            <a href="https://www.linkedin.com/in/jefferson-apolinario/" target="blank">
+                                <img src="/icons/linkedin.svg" alt="linkedin" width="50">
+                            </a>
+                        </div><!--midia-btn-->
+                    </div><!--perfil-->
+                    <div class="texto-about">
+                        <h2>Meu nome é Jefferson dos Santos, tenho 20 anos e moro em Guarulhos - SP. Estou cursando Análise e desenvolvimento de sistemas e sou apaixonado por tecnologia.
+                            <br><br>
+                            Atualmente estou focado no Front-end, mas estou sempre em busca de novos conhecimentos para evoluir minhas habilidades visando ser Fullstack, que é o meu objetivo como programador.
+                        </h2>
+                    </div><!--texto-about-->                    
+                 </div><!--container-about-->
+            </section><!--section-about-->
+            <section class="section-conhecimentos" id="conhecimentos">
+                <div class="titulo-conhecimentos">
+                    <h2>Conhecimentos.</h2>
+                </div><!--titulo-conhecimentos-->
+                <div class="container-conhecimentos" >       
+                            <img src="img/conhecimentos/html.png " alt="html" width="170">
+                            <img src="img/conhecimentos/css.png" alt="css" width="170">
+                            <img src="img/conhecimentos/js.png" alt="javascript" width="170">
+                            <img src="img/conhecimentos/git.png" alt="git" width="170">
+                            <img src="img/conhecimentos/bootstrap.png" alt="bootstrap" width="170">                
+                            <img src="img/conhecimentos/vue.png" alt="vue" width="170">                                               
+                </div><!--container-conhecimentos-->
+                <button class='btn2' onclick="alerta()">
+                    <a>Ver mais</a>
+                </button>
+            </section><!--section-conhecimentos-->
+            <section class="section-certificados">
+                <div class="titulo-certificados">
+                    <h2>Certificados.</h2>
+                </div><!--titulo-certificados-->
+                <div class="container-certificados">
+                    <div class="certificados">
+                        <article>
+                            <img src="img/certificados/logicaProgramacao.png" alt="Lógica de programação" width="700">
+                        </article>
+                        <article>
+                            <img src="img/certificados/POO.png" alt="Programação orientada a objetos" width="700">
+                        </article>
+                        <article>
+                            <img src="img/certificados/JavaBasico.png" alt="Java básico" width="700">
+                        </article>
+                        <article>
+                            <img src="img/certificados/SharePoint.png" alt="SharePoint" width="700">
+                        </article>
+                    </div><!--certificados-->
+                </div><!--container-certificados-->
+                <button class="btn3">
+                    <a onclick="alerta()">Ver mais</a>
+                </button> 
+            </section><!--section-certificados-->
+            <section class="section-projetos">
+                <div class="titulo-projetos" id="projetos" >
+                    <h2>Projetos.</h2>
+                </div><!--titulo-projetos-->
+                <div class="container-projetos">
+                    <div class="cards">
+                        <div id="card1"></div>
+                        <div id="card2"></div>
+                        <div id="card3"></div>
+                    </div><!--cards-->
+                    <div id="descrição-projeto">
+                        <h3>Clique na imagem e veja a descrição do projeto.</h3>
+                    </div>
+                    <div class="descrições">
+                        <div class="projeto1">
+                            <h1>Portfólio</h1>
+                            <p>Meu portfólio criado com o objetivo de mostrar meus projetos ao longo da minha carreira.</p>
+                            <h4>Tecnologias</h4><span></span>
+                        </div>
+                        <div class="projeto2">
+                            <h1>Jardim Presidente Dutra</h1>
+                            <p>É Um "guia turístico" do bairro. Feito para mostras os pontos mais importantes, como hospitais,escolas, comércios e muito mais.</p>
+                            <h4>Tecnologias:</h4><span></span>
+                        </div>
+                        <div class="projeto3">
+                            <h1>Cronograma Capilar</h1>
+                            <p>Tem dúvidas de como deve cuidar do seu cabelo? esse site mostra pra você de acordo com a sua saúde capilar!</p>
+                            <h4>Tecnologias</h4><span></span>
+                        </div>
+                    </div><!--descrições-->
+                </div><!--container-projetos-->
+            </section><!--section-projetos-->
+        <footer onmouseover="esconderSeta()" onmouseout="mostrarSeta()">
+                <div class="nome">
+                    <h3>Desenvolvido por Jefferson dos santos</h3>
+                </div><!--nome--> 
+                <div class="midias">
+                    <ul>
+                        <li id="icon1">
+                            <a href="https://www.linkedin.com/in/jefferson-apolinario/" target="_blank">
+                                <img src="icons/linkedin-alt.svg" alt="facebook" width="40px">
+                            </a>
+                        </li>
+                        <li id="icon2">
+                            <a href="https://github.com/ojef1" target="_blank">
+                                <img src="icons/github-alt.svg" alt="facebook" width="40px">
+                            </a>                        
+                        </li>
+                        <li id="icon3">
+                            <a>
+                                <img src="icons/whatsapp.svg" alt="facebook" width="40px">
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--midias-->              
+        </footer>
+        <div class="seta">
+            <a href="#home">
+            <img src="icons/top-arrow-from-top.svg" width="40" alt="voltar ao topo">
+            </a>
+        </div>
+        </main>
+    </body>
+    </html>
