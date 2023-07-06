@@ -67,20 +67,20 @@ card3.addEventListener("mouseover", function(){
 iconHtml = '<img src="img/projetos/html.png" width ="40">'
 iconCss = '<img src="img/projetos/css.png" width ="40">' 
 iconJs = '<img src="img/projetos/js.png" width ="40">' 
-iconPicoCss = '<img src="img/projetos/picoCss.jpg" width ="40">' 
+iconVue = '<img src="img/projetos/vue.png" width = "40">'
+iconBootstrap = '<img src="img/projetos/bootstrap.png" width = "40">'
 
 document.querySelector('.projeto1 span').innerHTML = iconHtml
 document.querySelector('.projeto1 span').innerHTML += iconCss
 document.querySelector('.projeto1 span').innerHTML += iconJs
 
-document.querySelector('.projeto2 span').innerHTML = iconHtml
-document.querySelector('.projeto2 span').innerHTML += iconCss
-document.querySelector('.projeto2 span').innerHTML += iconJs
-document.querySelector('.projeto2 span').innerHTML += iconPicoCss
+document.querySelector('.projeto2 span').innerHTML = iconVue
+
 
 document.querySelector('.projeto3 span').innerHTML = iconHtml
 document.querySelector('.projeto3 span').innerHTML += iconCss
 document.querySelector('.projeto3 span').innerHTML += iconJs
+document.querySelector('.projeto3 span').innerHTML += iconBootstrap
 
 
 //esconde a seta lateral quando está navegando pelas seções home e footer
