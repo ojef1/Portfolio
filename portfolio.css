@@ -349,9 +349,10 @@ button a {
    display: flex;
    height: 20rem;
    gap: 1rem;
+   
 }
 
-.cards div {
+.cards .card {
    flex: 1;
    border-radius: 2rem;
    background-image: url('img/projetos/em-breve.png');
@@ -359,6 +360,22 @@ button a {
    background-repeat: no-repeat;
    background-size: auto 100%;
    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.card .tooltip{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   margin: .5rem;
+   padding: .5rem;
+   opacity: 0%;
+   transition: ease-in-out .8s;
+   background-color: #0000008a;
+   border-radius: 2rem;
+   box-shadow: #fa7900 1px 1px 5px;
+}
+.card .tooltip:hover{
+   border: none;
    cursor: pointer;
 }
 
@@ -373,9 +390,12 @@ button a {
 #card3 {
    background-image: url("img/projetos/hDcAgency.png");}
 
-.cards div:hover {
+.cards .card:hover {
    flex: 3.5;
    border: solid 1px #fa7900;
+}
+.cards .card:hover .tooltip{
+   opacity: 100%;
 }
 
 .cards:hover>div:not(:hover) {

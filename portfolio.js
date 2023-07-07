@@ -63,12 +63,17 @@ card3.addEventListener("mouseover", function(){
   })
 })
 
-//icones que tecnologia que aparecem na descrição
+//icones que tecnologia que aparecem na descrição e no Tooltip
 iconHtml = '<img src="img/projetos/html.png" width ="40">'
 iconCss = '<img src="img/projetos/css.png" width ="40">' 
 iconJs = '<img src="img/projetos/js.png" width ="40">' 
 iconVue = '<img src="img/projetos/vue.png" width = "40">'
 iconBootstrap = '<img src="img/projetos/bootstrap.png" width = "40">'
+iconGitHub = '<img src="img/projetos/github.svg" width = "40">'
+iconSite = '<img src="img/projetos/site.svg" width = "40">'
+
+document.querySelectorAll('.card .site').forEach(e => e.innerHTML = iconSite)
+document.querySelectorAll('.card .codigo').forEach(e => e.innerHTML = iconGitHub)
 
 document.querySelector('.projeto1 span').innerHTML = iconHtml
 document.querySelector('.projeto1 span').innerHTML += iconCss
