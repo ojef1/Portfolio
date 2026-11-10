@@ -24,6 +24,8 @@
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#conhecimentos">Conhecimentos</a></li>
                         <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#certificados">Certificados</a></li>
+                        <li><a href="#contato" class="contato">Contato</a></li>
                     </ul>
                 </div><!--menu-->
             </nav>
@@ -37,6 +39,8 @@
                         <li><a href="#sobre" onclick="menuClose()">Sobre</a></li>
                         <li><a href="#conhecimentos" onclick="menuClose()">Conhecimentos</a></li>
                         <li><a href="#projetos" onclick="menuClose()">Projetos</a></li>
+                        <li><a href="#certificados" onclick="menuClose()">Certificados</a></li>
+                        <li><a href="#contato" class="contato" onclick="menuClose()">Contato</a></li>
                     </ul>
                 </div><!--menu-->
             </nav>
@@ -44,165 +48,273 @@
         <main class="main">
             <section class="container-home" id="home" onmouseover="esconderSeta()" onmouseout="mostrarSeta()">
                 <div class="textos">
+                    <span class="tag-disponivel">
+                        <span class="tag-ponto"></span>
+                        Disponível para freelas
+                    </span><!--tag-disponivel-->
                     <div class="texto-home">
                         <h2>Olá, eu sou o</h2>
                         <h2>Jefferson.</h2>
                     </div><!--texto-home-->
                     <div class="subtexto-home">
-                        <h3>Desenvolvedor Front-End .</h3>
+                        <h3>Desenvolvedor Mobile <span>|</span> Flutter (Dart) e Kotlin</h3>
                     </div><!--subtexto-home-->
-                </div>
-                <div class="container-img-home">
-                    <div class="imagens">
-                        <img src="img/inicio/home-img.png" alt="computador" width="400">
-                        </img>
-                        <img src="img/inicio/home_css.png" class="icon-one" alt="css" width="90">
-                        </img>
-                        <img src="/img/inicio/home_html.png" class="icon-two" alt="html" width="90">
-                        </img>
-                        <img src="/img/inicio/home_js.png" class="icon-tree" alt="html" width="90">
-                        </img>
+                    <p class="bio-home">Mais de 3 anos criando aplicativos mobile, com app publicado na Play Store. Transformo ideias em apps que funcionam e chegam ao usuário.</p>
+                    <div class="botoes-home">
+                        <a href="#projetos" class="btn-primario">Ver projetos</a>
+                        <a href="#contato" class="btn-secundario">Fale comigo</a>
+                    </div><!--botoes-home-->
+                    <div class="links-home">
+                        <a href="https://github.com/ojef1" target="_blank">
+                            <img src="icons/github.svg" alt="" width="20">
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/jefferson-apolinario/" target="_blank">
+                            <img src="icons/linkedin.svg" alt="" width="20">
+                            LinkedIn
+                        </a>
+                    </div><!--links-home-->
+                </div><!--textos-->
+                <div class="container-img-home" aria-hidden="true">
+                    <div class="orbita"></div>
+                    <div class="celular-fundo">
+                        <div class="celular flutua-b">
+                            <img src="img/projetos/fluxx-contas.png" alt="">
+                        </div>
                     </div>
+                    <div class="celular celular-frente flutua-a">
+                        <img src="img/projetos/fluxx-inicio.png" alt="">
+                    </div>
+                    <span class="chip chip-flutter flutua-b">Flutter</span>
+                    <span class="chip chip-dart flutua-c">Dart</span>
+                    <span class="chip chip-play flutua-a">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#4ADE80"><path d="M5 3.500v17a1 1 0 0 0 1.500.860l14-8.500a1 1 0 0 0 0-1.720l-14-8.500A1 1 0 0 0 5 3.500z"/></svg>
+                        Play Store
+                    </span>
                 </div><!--img-home-->
-                <button>
-                    <a href="https://www.linkedin.com/in/jefferson-apolinario/" target="blank">Veja
-                        meu linkedin</a>
-                </button>
             </section><!--section-home-->
             <section class="section-about" id="sobre">
-                <div class="titulo-about">
-                    <h2>Sobre.</h2>
-                </div><!--titulo-about-->
                 <div class="container-about">
                     <div class="perfil">
-                        <img src="img/sobre/img-perfil.jpeg" alt="foto de perfil" width="250" height="370">
-                        <div class="midia-btn">
-                            <a href="https://github.com/ojef1" target="blank">
-                                <img src="/icons/github.svg" alt="github" width="50">
-                            </a>
-                            <a href="https://www.linkedin.com/in/jefferson-apolinario/" target="blank">
-                                <img src="/icons/linkedin.svg" alt="linkedin" width="50">
-                            </a>
-                        </div><!--midia-btn-->
+                        <img src="img/sobre/img-perfil.jpeg" alt="foto de perfil">
                     </div><!--perfil-->
                     <div class="texto-about">
-                        <h2>Meu nome é Jefferson dos Santos, tenho 20 anos e moro em Guarulhos - SP. Estou cursando Análise e desenvolvimento de sistemas e sou apaixonado por tecnologia.
-                            <br><br>
-                            Atualmente estou focado no Front-end, mas estou sempre em busca de novos conhecimentos para evoluir minhas habilidades visando ser Fullstack, que é o meu objetivo como programador.
-                        </h2>
-                    </div><!--texto-about-->                    
-                 </div><!--container-about-->
+                        <div class="titulo-about">
+                            <h2>Sobre mim</h2>
+                        </div><!--titulo-about-->
+                        <p>Sou formado em Análise e Desenvolvimento de Sistemas, moro em Guarulhos (SP) e tenho mais de 3 anos de experiência na área. Desenvolvo aplicativos mobile, tenho conta de desenvolvedor ativa na Play Store e também trabalho com front-end.</p>
+                        <p>Estou aberto a projetos freelance: apps, telas e sites para quem precisa tirar uma ideia do papel.</p>
+                        <div class="destaques-about">
+                            <div class="destaque-about">
+                                <strong>+3 anos</strong>
+                                <span>de experiência</span>
+                            </div>
+                            <div class="destaque-about">
+                                <strong>Play Store</strong>
+                                <span>app publicado</span>
+                            </div>
+                            <div class="destaque-about">
+                                <strong>Inglês</strong>
+                                <span>nível avançado</span>
+                            </div>
+                        </div><!--destaques-about-->
+                    </div><!--texto-about-->
+                </div><!--container-about-->
             </section><!--section-about-->
             <section class="section-conhecimentos" id="conhecimentos">
                 <div class="titulo-conhecimentos">
-                    <h2>Conhecimentos.</h2>
+                    <h2>Conhecimentos</h2>
                 </div><!--titulo-conhecimentos-->
-                <div class="container-conhecimentos" >       
-                            <img src="img/conhecimentos/html.png " alt="html" width="170">
-                            <img src="img/conhecimentos/css.png" alt="css" width="170">
-                            <img src="img/conhecimentos/js.png" alt="javascript" width="170">
-                            <img src="img/conhecimentos/flutter.png" alt="git" width="170">
-                            <img src="img/conhecimentos/bootstrap.png" alt="bootstrap" width="170">                
-                            <img src="img/conhecimentos/vue.png" alt="vue" width="170">                                               
+                <div class="container-conhecimentos">
+                    <div class="card-conhecimento">
+                        <h3>Mobile</h3>
+                        <div class="tags-conhecimento">
+                            <span class="tag-conhecimento destaque">Flutter</span>
+                            <span class="tag-conhecimento">Dart</span>
+                            <span class="tag-conhecimento">Kotlin</span>
+                            <span class="tag-conhecimento">Android</span>
+                        </div>
+                    </div><!--card-conhecimento-->
+                    <div class="card-conhecimento">
+                        <h3>Arquitetura &amp; Padrões</h3>
+                        <div class="tags-conhecimento">
+                            <span class="tag-conhecimento">BLoC / Cubit</span>
+                            <span class="tag-conhecimento">Clean Architecture</span>
+                            <span class="tag-conhecimento">Responsividade</span>
+                            <span class="tag-conhecimento">UI/UX</span>
+                        </div>
+                    </div><!--card-conhecimento-->
+                    <div class="card-conhecimento">
+                        <h3>Integrações</h3>
+                        <div class="tags-conhecimento">
+                            <span class="tag-conhecimento">APIs REST</span>
+                            <span class="tag-conhecimento">Bluetooth (BLE)</span>
+                            <span class="tag-conhecimento">Comunicação Serial</span>
+                        </div>
+                    </div><!--card-conhecimento-->
+                    <div class="card-conhecimento">
+                        <h3>Web</h3>
+                        <div class="tags-conhecimento">
+                            <span class="tag-conhecimento">HTML</span>
+                            <span class="tag-conhecimento">CSS</span>
+                            <span class="tag-conhecimento">JavaScript</span>
+                            <span class="tag-conhecimento">Vue</span>
+                            <span class="tag-conhecimento">Bootstrap</span>
+                        </div>
+                    </div><!--card-conhecimento-->
+                    <div class="card-conhecimento">
+                        <h3>Ferramentas</h3>
+                        <div class="tags-conhecimento">
+                            <span class="tag-conhecimento">Git</span>
+                            <span class="tag-conhecimento">GitHub</span>
+                            <span class="tag-conhecimento">Jira</span>
+                            <span class="tag-conhecimento">Play Store</span>
+                            <span class="tag-conhecimento">Firebase</span>
+                        </div>
+                    </div><!--card-conhecimento-->
                 </div><!--container-conhecimentos-->
-                <button class='btn2' onclick="alerta()">
-                    <a>Ver mais</a>
-                </button>
             </section><!--section-conhecimentos-->
-            <section class="section-certificados">
-                <div class="titulo-certificados">
-                    <h2>Certificados.</h2>
-                </div><!--titulo-certificados-->
-                <div class="container-certificados">
-                    <div class="certificados">
-                        <article>
-                            <img src="img/certificados/logicaProgramacao.png" alt="Lógica de programação" width="700">
-                        </article>
-                        <article>
-                            <img src="img/certificados/POO.png" alt="Programação orientada a objetos" width="700">
-                        </article>
-                        <article>
-                            <img src="img/certificados/JavaBasico.png" alt="Java básico" width="700">
-                        </article>
-                        <article>
-                            <img src="img/certificados/SharePoint.png" alt="SharePoint" width="700">
-                        </article>
-                    </div><!--certificados-->
-                </div><!--container-certificados-->
-                <button class="btn3">
-                    <a onclick="alerta()">Ver mais</a>
-                </button> 
-            </section><!--section-certificados-->
-            <section class="section-projetos">
-                <div class="titulo-projetos" id="projetos" >
-                    <h2>Projetos.</h2>
+            <section class="section-projetos" id="projetos">
+                <div class="titulo-projetos">
+                    <h2>Projetos</h2>
                 </div><!--titulo-projetos-->
+                <article class="projeto-destaque">
+                    <div class="texto-destaque">
+                        <span class="selo-destaque">Destaque · App mobile</span>
+                        <div class="nome-destaque">
+                            <img src="img/projetos/fluxx-icone.png" alt="" width="48" height="48">
+                            <h3>Fluxx</h3>
+                        </div><!--nome-destaque-->
+                        <p><strong>Problema:</strong> organizar as finanças pessoais, com contas, receitas e gastos de cada mês em um só lugar.<br><strong>O que eu fiz:</strong> resumo mensal com progresso das receitas, lista de meses, cadastro de contas com categoria e renda usada, e tela de estatísticas.<br><strong>Resultado:</strong> app publicado na Play Store.</p>
+                        <div class="tags-projeto">
+                            <span class="tag-projeto">Flutter</span>
+                            <span class="tag-projeto">Dart</span>
+                            <span class="tag-projeto">Play Store</span>
+                        </div><!--tags-projeto-->
+                        <div class="links-destaque">
+                            <a href="https://play.google.com/store/apps/details?id=com.fluxx.app" target="_blank" rel="noopener" class="btn-play">
+                                <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M5 3.500v17a1 1 0 0 0 1.500.860l14-8.500a1 1 0 0 0 0-1.720l-14-8.500A1 1 0 0 0 5 3.500z"/></svg>
+                                Baixar na Play Store
+                            </a>
+                        </div><!--links-destaque-->
+                    </div><!--texto-destaque-->
+                    <div class="prints-destaque">
+                        <div class="print-celular">
+                            <img src="img/projetos/fluxx-inicio.png" alt="Tela inicial do app Fluxx">
+                        </div>
+                        <div class="print-celular print-deslocado">
+                            <img src="img/projetos/fluxx-drawer.png" alt="Drawer do app Fluxx">
+                        </div>
+                    </div><!--prints-destaque-->
+                </article><!--projeto-destaque-->
                 <div class="container-projetos">
-                    <div class="cards">
-                        <div class="card" id="card1">
-                            <div class="tooltip">
-                                <a href="https://todojef1.vercel.app" target="_blank" class="site"></a>
-                                <a href="https://github.com/ojef1/TreinoJs/tree/master/51_projeto" target="_blank" class="codigo"></a>
-                            </div>
+                    <article class="card-projeto">
+                        <div class="print-projeto">
+                            <img src="img/projetos/toDo.png" alt="Print do projeto To Do List">
                         </div>
-                        <div class="card" id="card2">
-                            <div class="tooltip">
-                                <a href="https://makeyourburguer.vercel.app" target="_blank" class="site"></a>
-                                <a href="https://github.com/ojef1/Make-your-burguer" target="_blank" class="codigo"></a>
-                            </div>
+                        <h3>To Do List</h3>
+                        <p>Gerenciador de tarefas para adicionar, editar, concluir e excluir itens.</p>
+                        <div class="tags-projeto">
+                            <span class="tag-projeto">HTML</span>
+                            <span class="tag-projeto">CSS</span>
+                            <span class="tag-projeto">JavaScript</span>
+                        </div><!--tags-projeto-->
+                        <div class="links-projeto">
+                            <a href="https://todojef1.vercel.app" target="_blank" class="link-site">Ver site</a>
+                            <a href="https://github.com/ojef1/TreinoJs/tree/master/51_projeto" target="_blank">Código</a>
+                        </div><!--links-projeto-->
+                    </article><!--card-projeto-->
+                    <article class="card-projeto">
+                        <div class="print-projeto">
+                            <img src="img/projetos/makeYourBurguer.png" alt="Print do projeto Make Your Burguer">
                         </div>
-                        <div class="card" id="card3">
-                            <div class="tooltip">
-                                <a href="https://hdcagency.vercel.app" target="_blank" class="site"></a>
-                                <a href="https://github.com/ojef1/hDC-Agency" target="_blank" class="codigo"></a>
-                            </div>
+                        <h3>Make Your Burguer</h3>
+                        <p>Site interativo para montar o hambúrguer com vários ingredientes e acompanhar a fila de pedidos.</p>
+                        <div class="tags-projeto">
+                            <span class="tag-projeto">Vue</span>
+                        </div><!--tags-projeto-->
+                        <div class="links-projeto">
+                            <a href="https://makeyourburguer.vercel.app" target="_blank" class="link-site">Ver site</a>
+                            <a href="https://github.com/ojef1/Make-your-burguer" target="_blank">Código</a>
+                        </div><!--links-projeto-->
+                    </article><!--card-projeto-->
+                    <article class="card-projeto">
+                        <div class="print-projeto">
+                            <img src="img/projetos/hDcAgency.png" alt="Print do projeto hDC Agency">
                         </div>
-                    </div><!--cards-->
-                    <div id="descrição-projeto">
-                        <h3>Clique na imagem e veja a descrição do projeto.</h3>
-                    </div>
-                    <div class="descrições">
-                        <div class="projeto1">
-                            <h1>To Do List</h1>
-                            <p>Este é um projeto simples que permite aos usuários adicionar, editar, marcar como concluídas e excluir tarefas de forma intuitiva e eficiente. É uma ferramenta prática para organização diária.</p>
-                            <h4>Tecnologias</h4><span></span>
-                        </div>
-                        <div class="projeto2">
-                            <h1>Make Your Burguer</h1>
-                            <p>Este projeto é um site interativo onde os usuários podem personalizar seu hambúrguer e acompanhar a fila de pedidos. Com uma variedade de opções de ingredientes, proporciona uma experiência única na montagem de hambúrgueres personalizados.</p>
-                            <h4>Tecnologias:</h4><span></span>
-                        </div>
-                        <div class="projeto3">
-                            <h1>hDC Agency</h1>
-                            <p>Este projeto é um site elegante e informativo. Apresenta os serviços de desenvolvimento de software oferecidos pela agência, fornecendo uma visão geral dos recursos, experiência da equipe e formas de contato para os clientes interessados.</p>
-                            <h4>Tecnologias</h4><span></span>
-                        </div>
-                    </div><!--descrições-->
+                        <h3>hDC Agency</h3>
+                        <p>Site institucional para uma agência de desenvolvimento, com serviços, experiência da equipe e formas de contato.</p>
+                        <div class="tags-projeto">
+                            <span class="tag-projeto">HTML</span>
+                            <span class="tag-projeto">CSS</span>
+                            <span class="tag-projeto">JavaScript</span>
+                            <span class="tag-projeto">Bootstrap</span>
+                        </div><!--tags-projeto-->
+                        <div class="links-projeto">
+                            <a href="https://hdcagency.vercel.app" target="_blank" class="link-site">Ver site</a>
+                            <a href="https://github.com/ojef1/hDC-Agency" target="_blank">Código</a>
+                        </div><!--links-projeto-->
+                    </article><!--card-projeto-->
                 </div><!--container-projetos-->
             </section><!--section-projetos-->
+            <section class="section-certificados" id="certificados">
+                <div class="titulo-certificados">
+                    <h2>Certificados</h2>
+                </div><!--titulo-certificados-->
+                <div class="container-certificados">
+                    <a href="img/certificados/udemy-flutter.png" class="card-certificado" onclick="abrirCertificado(event, this)">
+                        <span class="nome-certificado">Criação de apps com Flutter</span>
+                        <span class="instituicao-certificado">Udemy · 2024</span>
+                    </a><!--card-certificado-->
+                    <a href="img/certificados/logicaProgramacao.png" class="card-certificado" onclick="abrirCertificado(event, this)">
+                        <span class="nome-certificado">Lógica de programação</span>
+                        <span class="instituicao-certificado">Fundação Bradesco · 2022</span>
+                    </a><!--card-certificado-->
+                    <a href="img/certificados/POO.png" class="card-certificado" onclick="abrirCertificado(event, this)">
+                        <span class="nome-certificado">Programação orientada a objetos</span>
+                        <span class="instituicao-certificado">Fundação Bradesco · 2023</span>
+                    </a><!--card-certificado-->
+                    <a href="img/certificados/JavaBasico.png" class="card-certificado" onclick="abrirCertificado(event, this)">
+                        <span class="nome-certificado">Java básico</span>
+                        <span class="instituicao-certificado">Fundação Bradesco · 2023</span>
+                    </a><!--card-certificado-->
+                    <a href="img/certificados/SharePoint.png" class="card-certificado" onclick="abrirCertificado(event, this)">
+                        <span class="nome-certificado">SharePoint</span>
+                        <span class="instituicao-certificado">Fundação Bradesco · 2022</span>
+                    </a><!--card-certificado-->
+                </div><!--container-certificados-->
+                <dialog class="modal-certificado" id="modalCertificado" aria-label="Certificado">
+                    <button type="button" class="modal-fechar" onclick="fecharCertificado()" aria-label="Fechar certificado">
+                        <img src="icons/times.svg" alt="" width="32">
+                    </button>
+                    <img src="" alt="" class="modal-imagem">
+                </dialog><!--modal-certificado-->
+            </section><!--section-certificados-->
+            <section class="section-contato" id="contato">
+                <div class="card-contato">
+                    <div class="titulo-contato">
+                        <h2>Vamos conversar?</h2>
+                    </div><!--titulo-contato-->
+                    <p>Tem um app ou site para tirar do papel? Me chame para conversarmos sobre o seu projeto.</p>
+                    <a href="mailto:jeffersonprosantos0@gmail.com" class="btn-email">jeffersonprosantos0@gmail.com</a>
+                    <div class="midias">
+                        <ul>
+                            <li id="icon1">
+                                <a href="https://www.linkedin.com/in/jefferson-apolinario/" target="_blank">
+                                    <img src="icons/linkedin-alt.svg" alt="LinkedIn" width="40px">
+                                </a>
+                            </li>
+                            <li id="icon2">
+                                <a href="https://github.com/ojef1" target="_blank">
+                                    <img src="icons/github-alt.svg" alt="GitHub" width="40px">
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--midias-->
+                </div><!--card-contato-->
+            </section><!--section-contato-->
         <footer onmouseover="esconderSeta()" onmouseout="mostrarSeta()">
-                <div class="nome">
-                    <h3>Desenvolvido por Jefferson dos santos</h3>
-                </div><!--nome--> 
-                <div class="midias">
-                    <ul>
-                        <li id="icon1">
-                            <a href="https://www.linkedin.com/in/jefferson-apolinario/" target="_blank">
-                                <img src="icons/linkedin-alt.svg" alt="facebook" width="40px">
-                            </a>
-                        </li>
-                        <li id="icon2">
-                            <a href="https://github.com/ojef1" target="_blank">
-                                <img src="icons/github-alt.svg" alt="facebook" width="40px">
-                            </a>                        
-                        </li>
-                        <li id="icon3">
-                            <a>
-                                <img src="icons/whatsapp.svg" alt="facebook" width="40px">
-                            </a>
-                        </li>
-                    </ul>
-                </div><!--midias-->              
+                <p>Desenvolvido por Jefferson dos Santos · <a href="#home">Voltar ao topo</a></p>
         </footer>
         <div class="seta">
             <a href="#home">

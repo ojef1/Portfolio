@@ -1,21 +1,15 @@
 
-.container-img-home{
-    user-select: none;
-   width: 10cm;
-   position: absolute;
-   top: 0;
-   right: 0;
-   margin: 10rem 15rem 0 0;
-   animation: flutuacao 15s ease-in-out infinite;
+/*celulares e tecnologias flutuando no lado direito do home*/
+@keyframes flutuar-a{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+@keyframes flutuar-b{0%,100%{transform:translateY(0)}50%{transform:translateY(14px)}}
+@keyframes flutuar-c{0%,100%{transform:translateX(0)}50%{transform:translateX(12px)}}
+.flutua-a{animation:flutuar-a 6s ease-in-out infinite}
+.flutua-b{animation:flutuar-b 7s ease-in-out infinite}
+.flutua-c{animation:flutuar-c 8s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){
+    .flutua-a,.flutua-b,.flutua-c{animation:none}
 }
-@keyframes flutuacao{
-    0%,100%{
-       transform: translateX(0px);
-    }
-    50%{
-         transform: translateX(150px);      
-    }
-}
+
 .texto-home{
     animation: neon 2s alternate infinite; 
 }
@@ -23,101 +17,12 @@
     0%{filter: drop-shadow();}
     100%{filter: drop-shadow(#fa7900 1px 1px 5px);}
 }
-.subtexto-home{
-    border-right: 3px solid gray;
-    color: gray;
-    animation: pisca 1s normal infinite;
 
+/*popup do certificado*/
+.modal-certificado[open]{
+    animation: aparecer .25s ease-out;
 }
-@keyframes pisca{
-    0%{
-       border-right-color: gray;
-    }
-    100%{
-        border-right-color: transparent;
-    }
+@keyframes aparecer{
+    0%{opacity: 0; transform: scale(.96);}
+    100%{opacity: 1; transform: scale(1);}
 }
-button:hover {
-    animation: piscaCor 1s alternate infinite;
- }
-@keyframes piscaCor {
-    0%{
-
-    }
-    100%{
-    box-shadow: 0 0 10px #E8B50C, 0 0 25px #E08E09, 0 0 50px #E6AB4E;
-    background-color: #E08E09;
-    text-shadow: #000 1px 1px 5px; 
-    }
-}
-.icon-one{
-    animation: atomo 8s infinite alternate; 
-    position: relative;
-    top: -250px;
-    right: -390px;
-    animation-delay: .5s;
-}
-@keyframes atomo{
-    0%{
-        transform: translateX(0px)
-    }
-    100%{
-        transform: translateY(50px);
-        position: relative;
-        right: -300px;   
-    }
-    
-}
-.icon-two{
-    animation: atomo2 8s infinite alternate; 
-    position: relative;
-    top: -60px;
-    right: 30px;
-    animation-delay: .5s;
-}
-
-@keyframes atomo2{
-    0%{
-        transform: translateX(0px)
-    }
-    100%{
-        transform: translateY(-50px);
-        position: relative;
-        right: -40px;   
-      }
-}
-.icon-tree{
-    animation: atomo3 8s infinite alternate; 
-    position: relative;
-    top: -70px;
-    left: 100px;
-    animation-delay: 0.5s;
-}
-@keyframes atomo3{
-    0%{
-        transform: translateX(0px)
-    }
-    100%{
-        transform: translateY(-65px);
-        position: relative;
-        left: 45px;   
-      }
-}
-
-article img{
-    
-    animation: scroll 20s infinite ; 
-    cursor: pointer;
-    border-radius: 2rem;
-}
-    @keyframes scroll {
-        0%{margin-left: 0%;}
-        10%{margin-left: 0%;}
-        20%{margin-left: -130%;}
-        30%{margin-left: -130%;}
-        40%{margin-left: -260%;}
-        50%{margin-left: -260%;}
-        60%{margin-left: -385%;}
-        70%{margin-left: -385%;}
-        80%{margin-left: 0%;}
-    }

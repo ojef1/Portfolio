@@ -20,74 +20,25 @@ function menuClose(){
 
 
 
-//alertas para as quando clicarem nos botões onde o link não está pronto
-function alerta(){
-    alert('Desculpe o transtorno, essa parte ainda está em desenvolvimento!')
+//abre o certificado em um popup, sem tirar o usuário da página
+function abrirCertificado(event, card){
+    event.preventDefault()
+    var modal = document.getElementById('modalCertificado')
+    var imagem = modal.querySelector('.modal-imagem')
+    imagem.src = card.getAttribute('href')
+    imagem.alt = 'Certificado: ' + card.querySelector('.nome-certificado').textContent
+    modal.showModal()
 }
 
-//descrição dos projetos, muda quando passa o mouse em cima
-card1 = document.querySelector('#card1')
-card2 = document.querySelector('#card2')
-card3 = document.querySelector('#card3')
-textDesc1 = document.querySelector('.projeto1')
-textDesc2 = document.querySelector('.projeto2')
-textDesc3 = document.querySelector('.projeto3')
+//fecha o popup do certificado
+function fecharCertificado(){
+    document.getElementById('modalCertificado').close()
+}
 
-
-
-card1.addEventListener("mouseover", function(){
-    descrição = document.querySelector("#descrição-projeto");
-    descrição.innerHTML = textDesc1.innerHTML;
-
-//aqui faz ele não mostrar nada quando tira o mouse de cima    
-    card1.addEventListener("mouseout",function(){
-    descrição.innerHTML = "<h3>Clique na imagem e veja a descrição do projeto.</h3>"
-  })
+//fecha o popup também ao clicar fora da imagem
+document.getElementById('modalCertificado').addEventListener('click', function(event){
+    if (event.target === this) fecharCertificado()
 })
-card2.addEventListener("mouseover", function(){
-    descrição = document.querySelector("#descrição-projeto");
-  descrição.innerHTML = textDesc2.innerHTML;;
-
-  //aqui faz ele não mostrar nada quando tira o mouse de cima    
-  card2.addEventListener("mouseout",function(){
-    descrição.innerHTML = "<h3>Clique na imagem e veja a descrição do projeto.</h3>"
-  })
-})
-card3.addEventListener("mouseover", function(){
-    descrição = document.querySelector("#descrição-projeto");
-  descrição.innerHTML = textDesc3.innerHTML;;
-
-  //aqui faz ele não mostrar nada quando tira o mouse de cima    
-  card3.addEventListener("mouseout",function(){
-    descrição.innerHTML = "<h3>Clique na imagem e veja a descrição do projeto.</h3>"
-  })
-})
-
-//icones que tecnologia que aparecem na descrição e no Tooltip
-iconHtml = '<img src="img/projetos/html.png" width ="40">'
-iconCss = '<img src="img/projetos/css.png" width ="40">' 
-iconJs = '<img src="img/projetos/js.png" width ="40">' 
-iconVue = '<img src="img/projetos/vue.png" width = "40">'
-iconBootstrap = '<img src="img/projetos/bootstrap.png" width = "40">'
-iconGitHub = '<img src="img/projetos/github.svg" width = "40">'
-iconSite = '<img src="img/projetos/site.svg" width = "40">'
-
-document.querySelectorAll('.card .site').forEach(e => e.innerHTML = iconSite)
-document.querySelectorAll('.card .codigo').forEach(e => e.innerHTML = iconGitHub)
-
-document.querySelector('.projeto1 span').innerHTML = iconHtml
-document.querySelector('.projeto1 span').innerHTML += iconCss
-document.querySelector('.projeto1 span').innerHTML += iconJs
-
-document.querySelector('.projeto2 span').innerHTML = iconVue
-
-
-document.querySelector('.projeto3 span').innerHTML = iconHtml
-document.querySelector('.projeto3 span').innerHTML += iconCss
-document.querySelector('.projeto3 span').innerHTML += iconJs
-document.querySelector('.projeto3 span').innerHTML += iconBootstrap
-
-
 //esconde a seta lateral quando está navegando pelas seções home e footer
 function esconderSeta(){
   seta = document.querySelector('.seta')
